@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 import Navlinks from './Navlinks'
 import { usePathname, useRouter } from 'next/navigation'
 import { useMedia } from 'react-use'
-import { Sheet, SheetContent, SheetTrigger } from '../ui/sheet'
+import { Sheet, SheetContent, SheetDescription, SheetHeader, SheetTitle, SheetTrigger } from '../ui/sheet'
 import { Button } from '../ui/button'
 import { Menu, ShoppingCart } from 'lucide-react'
 import Link from 'next/link'
@@ -54,13 +54,17 @@ const Navbar = () => {
             </nav>
           </SheetTrigger>
           <SheetContent side="left" className="px-2">
+          {/* <SheetHeader> */}
+            <SheetTitle>
+              <div className='logo'>
+                <Link href='/' className='relative group'>
+                  <h1 className='text-xl font-bold hover:text-rafaishop-primary transition-all'>Rafaishop</h1>
+                  <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-rafaishop-primary transition-all duration-300 group-hover:w-full"></span>
+                </Link>
+              </div>
+            </SheetTitle>
             <nav className="flex flex-col items-start gap-y-2 pt-6">
-            <div className='logo'>
-              <Link href='/' className='relative group'>
-                <h1 className='text-xl font-bold hover:text-rafaishop-primary transition-all'>Rafaishop</h1>
-                <span className="absolute left-0 bottom-0 h-[2px] w-0 bg-rafaishop-primary transition-all duration-300 group-hover:w-full"></span>
-              </Link>
-            </div>
+            
               {routes.map((route) => (
                 <Button key={route.url} className='group relative' variant={pathName === route.url ? "secondary" : "ghost"} onClick={() => onClick(route.url)}>
                   {route.name}
@@ -75,7 +79,7 @@ const Navbar = () => {
   }
 
   return (
-    <nav className='w-full flex items-center justify-between p-4'>
+    <nav className='w-full flex items-center justify-between p-4 mx-auto max-w-5xl'>
       <div className='logo'>
         <Link href='/' className='relative group'>
           <h1 className='text-xl font-bold hover:text-rafaishop-primary transition-all'>Rafaishop</h1>
