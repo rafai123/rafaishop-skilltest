@@ -30,11 +30,11 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${geistSans.variable} antialiased`}>
         <QueryClientProvider client={queryClient}>
+          <Toaster />
           <Navbar />
           <SubNavbar />
           {children}
           <Footer />
-          <Toaster />
         </QueryClientProvider>
       </body>
     </html>

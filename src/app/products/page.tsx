@@ -46,7 +46,7 @@ const ProductsPage = () => {
         </button>
       </section>
       <section id='products' className='mx-auto w-10/12 max-w-5xl flex gap-3 my-5 flex-wrap'>
-      <ProductsSection total={30} searchQuery={searchQuery} products={filteredProducts} />
+      <ProductsSection products={filteredProducts} />
       </section>
     </main>
   )
