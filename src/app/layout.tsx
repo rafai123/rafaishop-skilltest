@@ -7,6 +7,7 @@ import Navbar from "@/components/Navbar/Navbar";
 import SubNavbar from "@/components/Navbar/SubNavbar";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+import Footer from "@/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -37,6 +38,7 @@ export default function RootLayout({
           <Navbar />
           <SubNavbar />
           {children}
+          <Footer />
         </QueryClientProvider>
       </body>
     </html>

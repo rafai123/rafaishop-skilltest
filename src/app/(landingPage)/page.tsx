@@ -1,5 +1,7 @@
-import HeroSection from "@/components/Hero/HeroSection";
+import HeroSection from "@/components/landing/Hero/HeroSection";
 import SectionShowProducts from "@/components/landing/SectionShowProducts";
+import SectionTestimoni from "@/components/landing/SectionTestimoni";
+import SectionThreeStep from "@/components/landing/SectionThreeStep";
 import SectionToProductPage from "@/components/landing/SectionToProductPage";
 import Image from "next/image";
 
@@ -9,6 +11,8 @@ export default function Home() {
       <HeroSection />
       <SectionToProductPage />
       <SectionShowProducts />
+      <SectionThreeStep />
+      <SectionTestimoni />
     </main>
   );
 }
