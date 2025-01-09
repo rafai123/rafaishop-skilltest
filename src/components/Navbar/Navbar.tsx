@@ -7,6 +7,7 @@ import { Sheet, SheetContent, SheetTitle, SheetTrigger } from '../ui/sheet'
 import { Button } from '../ui/button'
 import { Menu, ShoppingCart } from 'lucide-react'
 import Link from 'next/link'
+import { toast } from 'sonner'
 
 const routes = [
   {
@@ -90,9 +91,9 @@ const Navbar = () => {
         <Navlinks routes={routes} />
       </div>
       <div className='cart'>
-        <Link href='/cart' className='hover:text-rafaishop-primary transition-all'>
+        <div onClick={() => toast("Tidak sempat buat fitur cart pak :(")} className='hover:text-rafaishop-primary transition-all'>
           <ShoppingCart className="size-5" />
-        </Link>
+        </div>
       </div>
     </nav>
   )
