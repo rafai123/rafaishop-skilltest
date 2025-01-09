@@ -37,7 +37,7 @@ const WhoUsSection = () => {
               <li>Memberikan layanan pelanggan yang ramah dan responsif.</li>
               <li>Menghadirkan pengalaman belanja yang praktis dan tanpa ribet.</li>
             </ul>
-              Dengan komitmen ini, kami terus berinovasi untuk memberikan yang terbaik bagi Anda."</p>
+              Dengan komitmen ini, kami terus berinovasi untuk memberikan yang terbaik bagi Anda.</p>
           </>
         }
       />

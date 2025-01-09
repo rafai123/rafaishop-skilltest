@@ -1,4 +1,4 @@
-import { List, MenuIcon, Shield, ShoppingCart } from 'lucide-react'
+import { List, Shield, ShoppingCart } from 'lucide-react'
 import React from 'react'
 
 const data = [

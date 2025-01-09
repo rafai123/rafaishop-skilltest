@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import ProductsSection from '../ProductsSection'
+import ProductsSection from '../ProductsSectionLandiing'
 
 const SectionShowProducts = () => {
 

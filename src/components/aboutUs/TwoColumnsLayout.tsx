@@ -1,6 +1,6 @@
 import React, {  ReactNode } from 'react'
 
-const TwoColumnsLayout = ({right, left, reverse}: {right: ReactNode, left: ReactNode, reverse?: Boolean}) => {
+const TwoColumnsLayout = ({right, left, reverse}: {right: ReactNode, left: ReactNode, reverse?: boolean}) => {
 
   if (reverse) {
     return (

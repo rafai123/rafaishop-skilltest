@@ -3,7 +3,6 @@ import SectionShowProducts from "@/components/landing/SectionShowProducts";
 import SectionTestimoni from "@/components/landing/SectionTestimoni";
 import SectionThreeStep from "@/components/landing/SectionThreeStep";
 import SectionToProductPage from "@/components/landing/SectionToProductPage";
-import Image from "next/image";
 
 export default function Home() {
   return (

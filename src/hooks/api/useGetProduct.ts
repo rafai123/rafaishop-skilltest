@@ -1,25 +1,6 @@
 import { useQuery } from "@tanstack/react-query";
 import axios from "axios";
-
-export type Product = {
-  id: number;
-  title: string;
-  price: number;
-  description: string;
-  thumbnail: string;
-};
-
-export type ProductsResponse = {
-  description: any;
-  price: number;
-  title: string;
-  id: number | string | null | undefined;
-  thumbnail: string | undefined;
-  products: Product[];
-  total: number;
-  // skip: number;
-  limit: number;
-};
+import { ProductsResponse } from "./useGetProducts";
 
 export const useGetProduct = (idProduct?: number | string) => {
   const queryClient = useQuery<ProductsResponse[]>({
