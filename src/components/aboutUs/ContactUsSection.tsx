@@ -1,7 +1,7 @@
 "use client"
 
 import React from 'react'
-import { useToast } from "@/hooks/use-toast"
+import { toast } from "sonner"
 
 const ContactUsSection = () => {
 
@@ -9,17 +9,13 @@ const ContactUsSection = () => {
   const [email, setEmail] = React.useState('')
   const [message, setMessage] = React.useState('')
 
-  const {toast} = useToast()
-
   const handleSend = () => {
-    toast({
-      title: "Pesan Terkirim",
-      description: `
+    toast(`
+        Pesan Sukses Terkirim! \n
         Nama: ${name} \n
         Email: ${email} \n
         Pesan: ${message}
-      `,
-    })
+      `)
   }
 
 
