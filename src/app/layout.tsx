@@ -8,6 +8,7 @@ import SubNavbar from "@/components/Navbar/SubNavbar";
 
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import Footer from "@/components/Footer";
+import { Toaster } from "@/components/ui/toaster"
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -39,6 +40,7 @@ export default function RootLayout({
           <SubNavbar />
           {children}
           <Footer />
+          <Toaster />
         </QueryClientProvider>
       </body>
     </html>

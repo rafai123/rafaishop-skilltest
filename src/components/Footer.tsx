@@ -5,8 +5,8 @@ import { FaInstagram, FaLinkedin, FaYoutube } from 'react-icons/fa';
 const Footer = () => {
   const footerLinks = [
     { name: "Home", link: "/" },
-    { name: "Products", link: "/" },
-    { name: "About Us", link: "/" },
+    { name: "Products", link: "/products" },
+    { name: "About Us", link: "/about-us" },
     { name: "Coming Soon!", link: "/" },
     { name: "Contact Us", link: "/" },
   ];
