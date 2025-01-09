@@ -21,20 +21,19 @@ export type ProductsResponse = {
   limit: number;
 };
 
-export const useGetProducts = (limit?: number) => {
+export const useGetProduct = (idProduct?: number | string) => {
   const queryClient = useQuery<ProductsResponse[]>({
-    queryKey: ["products"],
+    queryKey: ["product"],
     queryFn: async () => {
-      let limitQuery = limit ? `limit=${limit}&` : "" 
-      const response = await axios.get(`https://dummyjson.com/products?${limitQuery}select=title,price,description,thumbnail`);
+      const response = await axios.get(`https://dummyjson.com/products/${idProduct}`);
 
       if (!response) {
         throw new Error("error");
       }
 
-      console.log(response.data.products)
+      console.log(response.data)
 
-      return response.data.products;
+      return response.data;
     },
   });
 
